@@ -1,16 +1,17 @@
 <script setup lang="ts">
+// Modules
+import { useContentStore } from "@/stores/contentStore";
+
 // Components
-import OrganismHomeAbout from "@/components/organism/OrganismHomeAbout.vue";
-import OrganismHomeModules from "@/components/organism/OrganismHomeModules.vue";
-import OrganismHomeSupport from "@/components/organism/OrganismHomeSupport.vue";
-import OrganismHomeTooling from "@/components/organism/OrganismHomeTooling.vue";
+import AtomHeading from "@/components/atom/AtomHeading.vue";
+
+// Data
+const contentStore = useContentStore();
+const heading = contentStore.data.heading.home;
 </script>
 
 <template>
-  <div class="page-container">
-    <OrganismHomeAbout />
-    <OrganismHomeTooling />
-    <OrganismHomeModules />
-    <OrganismHomeSupport />
-  </div>
+  <article>
+    <AtomHeading :heading="heading" />
+  </article>
 </template>

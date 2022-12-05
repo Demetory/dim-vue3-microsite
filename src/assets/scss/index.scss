@@ -1,8 +1,9 @@
 /* ==========================================================================
-   Global Scope
+   Import to Global Scope
    ========================================================================== */
 
-@import "style.common";
+@import "style.defaults";
 @import "style.fonts";
 @import "style.helpers";
 @import "style.print";
+@import "style.theme";

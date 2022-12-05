@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Grid System / Sections / Containers
+   VARIABLES: Grid System / Dimensions
 
    Imported through vite.config.ts as @use directive
    Usage: grid.$var
@@ -8,11 +8,22 @@
 // Main Dimensions
 $min-width: 320px;
 $min-height: 100vh;
-$gap: 1.6rem;
+$gap: 20px;
 
 // Borders
 $border-radius: 8px;
 $border-solid: solid 1px;
+$border-app: 20px;
+
+// Z-Indexes
+$zindex-top: 90000;
+$zindex-kreuz: 21000;
+$zindex-border-app: 20000;
+$zindex-navi: 10000;
 
 // Transitions
 $transition: 0.5s ease;
+
+// From Origin
+$cursor_l: 50px;
+$cursor_s: 20px;

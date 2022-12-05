@@ -1,7 +1,7 @@
 {
-  "name": "Dim-Vue3-Template",
-  "short_name": "Dim-Vue3",
-  "description": "Vue 3 + Vite Starter Template",
+  "name": "Dim-Vue3-Microsite",
+  "short_name": "Dim-Microsite",
+  "description": "Demetory Vue 3 + Vite one page microsite",
   "icons": [
     {
       "src": "icon.png",

@@ -6,7 +6,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "@/views/ViewHome.vue";
 
 // Data
-const defaultTitle = "Dim Vue3 Template";
+const defaultTitle = "Demetory™ — Design the Planet";
 const isAuthenticated = false;
 
 // Routes
@@ -24,31 +24,6 @@ const routes = [
     path: "/",
     name: "home",
     component: HomeView,
-  },
-  {
-    path: "/examples",
-    name: "examples",
-    component: () => import("@/views/ViewExamples.vue"),
-    meta: {
-      title: "Code Examples",
-    },
-  },
-  {
-    path: "/secret",
-    name: "secret",
-    component: () => import("@/views/ViewSecret.vue"),
-    meta: {
-      title: "Secret Page",
-      auth: true,
-    },
-  },
-  {
-    path: "/login",
-    name: "login",
-    component: () => import("@/views/ViewLogin.vue"),
-    meta: {
-      title: "Login",
-    },
   },
 ];
 

@@ -1,25 +1,31 @@
 /* ==========================================================================
-   Color Library
+   VARIABLES: Color Library
 
    Imported through vite.config.ts as @use directive
    Usage: colors.$var
    ========================================================================== */
 
-// Color Presets
+// Main Colors
 $white: #fff;
-$black: #000;
-$grey: #999;
+$black: #121212;
+$grey: #dbdbdb;
+$green: #73bbc5;
 
-// Fonts
-$font-black: #222;
+// Typo Colors
+$font-main: #fff;
+$font-selection: #fff;
+$font-grey: #dbdbdb;
 
 // Links
-$link-main: #00bd6f;
-$link-main-hover: #3f3f46;
-$link-main-active: #000;
+$link-main: #73bbc5;
+$link-main-hover: #fff;
+$link-main-active: #73bbc5;
 
 // Backgrounds
-$bg-white: #efefef;
+$bg-body: #090909;
+$bg-border-app: #000;
+$bg-selection: #73bbc5;
 
-// Helpers
-$selection-bg: #b3d4fc;
+// Deco & Others
+$ukraine-blue: #0057b8;
+$ukraine-yellow: #ffd700;

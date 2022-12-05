@@ -1,27 +1,13 @@
-# Vue 3 Starter
+# Dim Vue 3 Microsite
 
-- [Vue 3](https://vuejs.org/) + [Vite](https://vitejs.dev/) Minimalistic Starter Template
-- Uses [TypeScript](https://www.typescriptlang.org/) and [Script Setup SFC](https://vuejs.org/api/sfc-script-setup.html)
-  <br/><br/>
-
-## Features
-
-- Full configured and ready
-- No complex || heavy dependencies
-- Atomic Design Patter
-- Pre-configured HTML index page (including SEO-metatags and No-Script section)
-- Prepared public folder (icons, robots.txt, htaccess, humans.txt, etc)
-- CSS normalization
-- SCSS Maps and Modules in global scope
-- Configured router (including transitions, navigation guards and 404 page)
-- Simple code examples for Storage, Composables, TypeScript, Modules
-- ESLint + Prettier for better code quality
-- Cypress + Vitest for testing
-  <br/><br/>
+Personal minimalistic microsite based on [Vue 3](https://vuejs.org/) + [Vite](https://vitejs.dev/) + [Dim-Vue3-Template](https://github.com/Demetory/dim-vue3-template)
+<br/>
+Uses [TypeScript](https://www.typescriptlang.org/) and [Script Setup SFC](https://vuejs.org/api/sfc-script-setup.html)
+<br/><br/>
 
 ## Preview
 
-[Live Demo](http://vue3-template.demetrey.ru/)
+[Live Demo](http://demetrey.ru/)
 <br/>
 <br/>
 ![image](/public/cover.jpg)

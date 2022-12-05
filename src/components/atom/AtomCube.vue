@@ -54,18 +54,19 @@ $rotate-animaton: (
 );
 
 .scene {
+  z-index: 1;
   display: flex;
   width: $cube-size;
   height: $cube-size;
   justify-content: center;
   align-items: center;
-  perspective: $cube-size;
+  perspective: 1000;
 }
 
 .cube {
+  position: relative;
   width: $cube-size;
   height: $cube-size;
-  position: relative;
   transform-style: preserve-3d;
   transform: translateZ(calc($cube-size/2));
   transition: transform 1s;
@@ -78,11 +79,13 @@ $rotate-animaton: (
 
   &-edge {
     position: absolute;
-    width: $cube-size;
-    height: $cube-size;
+    display: block;
+    width: 100%;
+    height: 100%;
     line-height: $cube-size;
     text-align: center;
     background-color: $cube-bg-color;
+    border: solid 1px #000;
   }
 
   @each $name, $rotate in $rotate-default {
@@ -96,6 +99,37 @@ $rotate-animaton: (
   @each $percent, $rotate in $rotate-animaton {
     #{$percent} {
       transform: translateZ(calc($cube-size/2)) $rotate;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  $cube-size: 60px;
+  .scene,
+  .cube {
+    width: $cube-size;
+    height: $cube-size;
+  }
+
+  .cube {
+    transform: translateZ(calc($cube-size/2));
+
+    &-edge {
+      line-height: $cube-size;
+    }
+
+    @each $name, $rotate in $rotate-default {
+      .cube-#{$name} {
+        transform: $rotate translateZ(calc($cube-size/2));
+      }
+    }
+  }
+
+  @keyframes spincube {
+    @each $percent, $rotate in $rotate-animaton {
+      #{$percent} {
+        transform: translateZ(calc($cube-size/2)) $rotate;
+      }
     }
   }
 }

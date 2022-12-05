@@ -26,7 +26,7 @@ small {
   transform: rotate(-90deg);
   text-align: center;
   font-size: 1.2rem;
-  font-weight: 200;
+  font-weight: 400;
   letter-spacing: 0.05em;
   color: colors.$font-grey;
   opacity: 0.75;

@@ -25,8 +25,8 @@ const getSize = computed(() => {
 <template>
   <div class="flip-container">
     <a :href="flipper.url" target="_blank" rel="noopener noreferrer">
-      <span class="front"><img :src="useImage(`${flipper.img}-front.svg`)" /></span>
-      <span class="back"><img :src="useImage(`${flipper.img}-back.svg`)" /></span>
+      <span class="front"><img alt="Demetory - Flipper" :src="useImage(`${flipper.img}-front.svg`)" /></span>
+      <span class="back"><img alt="Demetory - Flipper" :src="useImage(`${flipper.img}-back.svg`)" /></span>
     </a>
   </div>
 </template>

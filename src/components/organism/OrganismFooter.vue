@@ -50,19 +50,62 @@ function updateTime() {
 
 <template>
   <footer>
-    <span>It's {{ dateClock }} by me.</span>
-    <span>{{ getContactState }}</span>
-    <span>{{ getYear }} &copy; Demetory</span>
+    <div class="col">
+      <span>It's {{ dateClock }} by me.</span>
+      <span>{{ getContactState }}</span>
+    </div>
+    <div class="col">
+      <span class="shop"><a href="https://shop.demetrey.ru/" rel="noopener noreferrer">shop.demetrey.ru</a></span>
+      <span>{{ getYear }} &copy; Demetory</span>
+    </div>
   </footer>
 </template>
 
 <style scoped lang="scss">
 footer {
+  .col {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+
+    &:first-of-type {
+      span:not(:last-of-type) {
+        margin-right: 0.6rem;
+      }
+    }
+
+    &:last-of-type {
+      justify-content: flex-end;
+      span:not(:last-of-type) {
+        margin-right: calc(grid.$gap * 2);
+      }
+    }
+
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+      line-height: 2.8rem;
+
+      &:last-of-type {
+        align-items: flex-end;
+        span:not(:last-of-type) {
+          margin-right: 0;
+        }
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 1.3rem;
+    }
+  }
+}
+/*
+footer {
   span:not(:last-of-type) {
     padding-right: 0.6rem;
   }
-  span:last-child {
+  span.shop {
     margin-left: auto;
+    margin-right: calc(grid.$gap * 2);
   }
 }
 
@@ -84,4 +127,5 @@ footer {
     }
   }
 }
+*/
 </style>

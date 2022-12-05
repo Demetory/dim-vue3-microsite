@@ -14,6 +14,7 @@ defineProps({
 
 <style scoped lang="scss">
 small {
+  z-index: 200;
   position: fixed;
   display: block;
   bottom: calc(50% - 200px);

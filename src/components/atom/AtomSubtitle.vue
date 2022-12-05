@@ -28,7 +28,7 @@ small {
   font-weight: 200;
   letter-spacing: 0.05em;
   color: colors.$font-grey;
-  opacity: 0.5;
+  opacity: 0.75;
 
   &::before {
     content: "";

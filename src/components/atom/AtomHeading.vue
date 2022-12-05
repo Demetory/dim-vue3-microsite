@@ -26,10 +26,11 @@ defineProps({
 
 <style scoped lang="scss">
 .heading {
-  display: flex;
+  display: inline-flex;
+  flex: 0 1 auto;
   flex-direction: row;
   margin-top: auto;
-  margin-bottom: 6rem;
+  margin-bottom: auto;
 
   &__col,
   &__col-digit {
